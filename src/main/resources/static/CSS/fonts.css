@@ -1,0 +1,13 @@
+@font-face {
+            font-family: '넥슨고딕2_M';
+            src: url('font/NEXON\ Lv2\ Gothic\ Medium.ttf') format('truetype');
+            font-weight: 20px;
+            font-style: normal;
+        }
+
+@font-face {
+            font-family: '넥슨고딕2_B';
+            src: url('font/NEXON\ Lv2\ Gothic\ Bold.ttf') format('truetype');
+            font-weight: 40px;
+            font-style: normal;
+        }

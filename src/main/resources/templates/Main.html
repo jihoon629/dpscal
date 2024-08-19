@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Character List</title>
+</head>
+<body>
+    <h1>Character List</h1>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>HP</th>
+            <th>ATK</th>
+            <th>DEF</th>
+            <th>CRIT</th>
+            <th>HIT</th>
+            <th>EVA</th>
+        </tr>
+        <tr th:each="character : ${characters}">
+            <td th:text="${character.name}">name</td>
+            <td th:text="${character.HP}">HP</td>
+            <td th:text="${character.ATK}">ATK</td>
+            <td th:text="${character.DEF}">DEF</td>
+            <td th:text="${character.CRIT}">CRIT</td>
+            <td th:text="${character.HIT}">HIT</td>
+            <td th:text="${character.EVA}">EVA</td>
+        </tr>
+    </table>
+</body>
+</html>

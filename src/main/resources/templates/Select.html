@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./asset/select2.css">
+    <title>CC</title>
+
+</head>
+
+<body>
+    <script th:inline="javascript">
+        function showClass(className) {
+            const classes = ['striker', 'ranger', 'defender', 'sniper', 'supporter'];
+            classes.forEach(c => {
+                document.getElementById(c).classList.add('hidden');
+            });
+            document.getElementById(className).classList.remove('hidden');
+        }
+
+
+
+    </script>
+
+
+<div class="content">
+
+    <h1>CC</h1>
+
+
+
+
+
+
+    <div class="class-container">
+        <div class="class-button" onclick="showClass('striker')">스트라이커</div>
+        <div class="class-button" onclick="showClass('ranger')">레인저</div>
+        <div class="class-button" onclick="showClass('defender')">디펜더</div>
+        <div class="class-button" onclick="showClass('sniper')">스나이퍼</div>
+        <div class="class-button" onclick="showClass('supporter')">서포터</div>
+    </div>
+
+    <table class="character-table" id="striker">
+        <tbody>
+            <tr>
+                <td>
+                    <form method="post" action="/ChangeEq">
+                        <input type="hidden" name="CharaNum" value="0">
+                        <input type="hidden" name="charaName" value="유미나">
+                        <input type="hidden" name="nomalAttack" value="1.97">
+                        <input type="hidden" name="passiveskill" value="3">
+                        <input type="hidden" name="activeskill" value="18">
+                        <input type="hidden" name="ultSkill" value="52">
+                        <button type="submit" id="aw1"><img src="./asset/YuMiNa.webp" alt="유미나"></button>
+                    </form>
+                </td>
+                <td>
+                    <form method="post" action="/ChangeEq">
+                        <input type="hidden" name="CharaNum" value="2">
+                        <input type="hidden" name="CharaName" value="유나">
+                        <input type="hidden" name="NomalAttack" value="1.54">
+                        <input type="hidden" name="Passiveskill" value="0">
+                        <input type="hidden" name="Activeskill" value="20">
+                        <input type="hidden" name="UltSkill" value="52">
+                        <button type="submit" id="aw2"><img src="./asset/YuNa.webp" alt="유나"></button>
+                    </form>
+                </td>
+                <td>
+                    <form method="post" action="/ChangeEq">
+                        <input type="hidden" name="CharaNum" value="3">
+                        <input type="hidden" name="CharaName" value="주시윤">
+                        <input type="hidden" name="NomalAttack" value="1.68">
+                        <input type="hidden" name="Passiveskill" value="4">
+                        <input type="hidden" name="Activeskill" value="26">
+                        <input type="hidden" name="UltSkill" value="54">
+                        <button type="submit" id="aw3"><img src="./asset/JooShiYoon.webp"></button>
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <form method="post" action="/ChangeEq">
+                        <input type="hidden" name="CharaNum" value="4">
+                        <input type="hidden" name="CharaName" value="호라이즌">
+                        <input type="hidden" name="NomalAttack" value="1.87">
+                        <input type="hidden" name="Passiveskill" value="4">
+                        <input type="hidden" name="Activeskill" value="34">
+                        <input type="hidden" name="UltSkill" value="62">
+                        <button type="submit" id="aw4"><img src="./asset/Horizon.webp"></button>
+                    </form>
+                </td>
+                <td>
+                    <form method="post" action="/ChangeEq">
+                        <input type="hidden" name="CharaNum" value="5">
+                        <input type="hidden" name="CharaName" value="시그마">
+                        <input type="hidden" name="NomalAttack" value="1.04">
+                        <input type="hidden" name="Passiveskill" value="0">
+                        <input type="hidden" name="Activeskill" value="24">
+                        <input type="hidden" name="UltSkill" value="50">
+                        <button type="submit" id="aw5"><img src="./asset/Sigma.webp"></button>
+                    </form>
+                </td>
+            
+
+                <td>
+                    <form method="post" action="/ChangeEq">
+                        <input type="hidden" name="CharaNum" value="6">
+                        <input type="hidden" name="CharaName" value="치후유">
+                        <input type="hidden" name="NomalAttack" value="1.81">
+                        <input type="hidden" name="Passiveskill" value="0">
+                        <input type="hidden" name="Activeskill" value="23">
+                        <input type="hidden" name="UltSkill" value="60">
+                        <button type="submit" id="aw6"><img src="./asset/ChiFuyu.webp"></button>
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <form method="post" action="/ChangeEq">
+                        <input type="hidden" name="CharaNum" value="7">
+                        <input type="hidden" name="CharaName" value="이브">
+                        <input type="hidden" name="NomalAttack" value="1.67">
+                        <input type="hidden" name="Passiveskill" value="0">
+                        <input type="hidden" name="Activeskill" value="20">
+                        <input type="hidden" name="UltSkill" value="60">
+                        <button id="aw7"><img src="./asset/Eve.webp"></button>
+                    </form>
+                </td>
+                <td>
+                    <form method="post" action="/ChangeEq">
+                        <input type="hidden" name="CharaNum" value="98">
+                        <input type="hidden" name="CharaName" value="쉐퍼드&러처">
+                        <input type="hidden" name="NomalAttack" value="2.33">
+                        <input type="hidden" name="Passiveskill" value="2">
+                        <input type="hidden" name="Activeskill" value="10">
+                        <input type="hidden" name="UltSkill" value="28">
+                        <button id="aw8"><img src="./asset/Shperd&Lurcher.webp"></button>
+                    </form>
+                </td>
+                <td>
+                    <form method="post" action="/ChangeEq">
+                        <input type="hidden" name="CharaNum" value="8">
+                        <input type="hidden" name="CharaName" value="카렌">
+                        <input type="hidden" name="NomalAttack" value="2">
+                        <input type="hidden" name="Passiveskill" value="0">
+                        <input type="hidden" name="Activeskill" value="23">
+                        <input type="hidden" name="UltSkill" value="45">
+                        <button id="aw9"><img src="./asset/Kallen.webp"></button>
+                    </form>
+                </td>
+
+            </tr>
+        </tbody>
+    </table>
+
+    <table class="character-table hidden" id="ranger">
+        <tbody>
+            <tr>
+                <td>
+                    <form method="post" action="/ChangeEq">
+                        <input type="hidden" name="CharaNum" value="9">
+                        <input type="hidden" name="CharaName" value="이수연">
+                        <input type="hidden" name="NomalAttack" value="2.3">
+                        <input type="hidden" name="Passiveskill" value="0">
+                        <input type="hidden" name="Activeskill" value="23">
+                        <input type="hidden" name="UltSkill" value="54">
+                        <button type="submit"><img src="./asset/LEESOOYEON.webp" alt="이수연"></button>
+                    </form>
+                </td>
+                <td>
+                    <form method="post" action="/ChangeEq">
+                        <input type="hidden" name="CharaNum" value="10">
+                        <input type="hidden" name="CharaName" value="서윤">
+                        <input type="hidden" name="NomalAttack" value="2.0">
+                        <input type="hidden" name="Passiveskill" value="3">
+                        <input type="hidden" name="Activeskill" value="21">
+                        <input type="hidden" name="UltSkill" value="52">
+                        <button type="submit" id="aw11"><img src="./asset/SEOYOON.webp" alt="서윤"></button>
+                    </form>
+                </td>
+                <td>
+                    <form method="post" action="/ChangeEq">
+                        <input type="hidden" name="CharaNum" value="11">
+                        <input type="hidden" name="CharaName" value="미니스트라">
+                        <input type="hidden" name="NomalAttack" value="1.69">
+                        <input type="hidden" name="Passiveskill" value="0">
+                        <input type="hidden" name="Activeskill" value="24">
+                        <input type="hidden" name="UltSkill" value="50">
+                        <button type="submit" id="aw12"><img src="./asset/MINISTRA.webp" alt="미니스트라"></button>
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <form method="post" action="/ChangeEq">
+                        <input type="hidden" name="CharaNum" value="12">
+                        <input type="hidden" name="CharaName" value="안토노프">
+                        <input type="hidden" name="NomalAttack" value="1.28">
+                        <input type="hidden" name="Passiveskill" value="0">
+                        <input type="hidden" name="Activeskill" value="24">
+                        <input type="hidden" name="UltSkill" value="56">
+                        <button type="submit" id="aw13"><img src="./asset/ANTONOV.webp" alt="안토노프"></button>
+                    </form>
+                </td>
+            
+
+
+                <td>
+                    <form method="post" action="/ChangeEq">
+                        <input type="hidden" name="CharaNum" value="13">
+                        <input type="hidden" name="CharaName" value="레지나">
+                        <input type="hidden" name="NomalAttack" value="2.17">
+                        <input type="hidden" name="Passiveskill" value="0">
+                        <input type="hidden" name="Activeskill" value="34">
+                        <input type="hidden" name="UltSkill" value="68">
+                        <button type="submit" id="aw14"><img src="./asset/REGINA.webp" alt="레지나"></button>
+                    </form>
+                </td>
+                <td>
+                    <form method="post" action="/ChangeEq">
+                        <input type="hidden" name="CharaNum" value="99">
+                        <input type="hidden" name="CharaName" value="카린">
+                        <input type="hidden" name="NomalAttack" value="1.17">
+                        <input type="hidden" name="Passiveskill" value="16">
+                        <input type="hidden" name="Activeskill" value="14">
+                        <input type="hidden" name="UltSkill" value="23">
+                        <button type="submit" id="aw15"><img src="./asset/KARIN.webp" alt="카린"></button>
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <form method="post" action="/ChangeEq">
+                        <input type="hidden" name="CharaNum" value="97">
+                        <input type="hidden" name="CharaName" value="앨리스">
+                        <input type="hidden" name="NomalAttack" value="1.5">
+                        <input type="hidden" name="Passiveskill" value="0">
+                        <input type="hidden" name="Activeskill" value="5">
+                        <input type="hidden" name="UltSkill" value="14">
+                        <button type="submit" id="aw16"><img src="./asset/ALICE.webp" alt="앨리스"></button>
+                    </form>
+                </td>
+                <td>
+                    <form method="post" action="/ChangeEq">
+                        <input type="hidden" name="CharaNum" value="14">
+                        <input type="hidden" name="CharaName" value="마브카">
+                        <input type="hidden" name="NomalAttack" value="3.4">
+                        <input type="hidden" name="Passiveskill" value="0">
+                        <input type="hidden" name="Activeskill" value="25">
+                        <input type="hidden" name="UltSkill" value="60">
+                        <button type="submit" id="aw17"><img src="./asset/MAVKA.webp" alt="마브카"></button>
+                    </form>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table class="character-table hidden" id="defender">
+        <tbody>
+            <tr>
+                <td>
+                    <form method="post" action="/ChangeEq">
+                        <input type="hidden" name="CharaNum" value="15">
+                        <input type="hidden" name="CharaName" value="힐데">
+                        <input type="hidden" name="NomalAttack" value="1.97">
+                        <input type="hidden" name="Passiveskill" value="0">
+                        <input type="hidden" name="Activeskill" value="28">
+                        <input type="hidden" name="UltSkill" value="48">
+                        <button id="aw18"><img src="./asset/HILDE.webp" alt=""></button>
+                    </form>
+                </td>
+                <td>
+
+                    <form method="post" action="/ChangeEq">
+                        <input type="hidden" name="CharaNum" value="16">
+                        <input type="hidden" name="CharaName" value="육익 나유빈">
+                        <input type="hidden" name="NomalAttack" value="2.33">
+                        <input type="hidden" name="Passiveskill" value="0">
+                        <input type="hidden" name="Activeskill" value="22">
+                        <input type="hidden" name="UltSkill" value="48">
+                        <button type="submit" id="aw19"><img src="./asset/NAYUBIN.webp" alt=""></button>
+                    </form>
+                </td>
+                <td>
+                    <form method="post" action="/ChangeEq">
+                        <input type="hidden" name="CharaNum" value="17">
+                        <input type="hidden" name="CharaName" value="리플 킹">
+                        <input type="hidden" name="NomalAttack" value="2.17">
+                        <input type="hidden" name="Passiveskill" value="0">
+                        <input type="hidden" name="Activeskill" value="24">
+                        <input type="hidden" name="UltSkill" value="48">
+                        <button type="submit" id="aw20"><img src="./asset/REPLACERKING.webp" alt=""></button>
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td>
+
+                    <form method="post" action="/ChangeEq">
+                        <input type="hidden" name="CharaNum" value="18">
+                        <input type="hidden" name="CharaName" value="이볼브 원">
+                        <input type="hidden" name="NomalAttack" value="8">
+                        <input type="hidden" name="Passiveskill" value="0">
+                        <input type="hidden" name="Activeskill" value="26">
+                        <input type="hidden" name="UltSkill" value="56">
+                        <button type="submit" id="aw21"><img src="./asset/EVOLVE001.webp" alt=""></button>
+                    </form>
+                </td>
+                <td>
+                    <form method="post" action="/ChangeEq">
+                        <input type="hidden" name="CharaNum" value="19">
+                        <input type="hidden" name="CharaName" value="각성 제이크">
+                        <input type="hidden" name="NomalAttack" value="1.67">
+                        <input type="hidden" name="Passiveskill" value="3">
+                        <input type="hidden" name="Activeskill" value="24">
+                        <input type="hidden" name="UltSkill" value="60">
+                        <button type="submit" id="aw22"><img src="./asset/JAKEWALKER.webp" alt=""></button>
+                    </form>
+                </td>
+                <td>
+                    <form method="post" action="/ChangeEq">
+                        <input type="hidden" name="CharaNum" value="20">
+                        <input type="hidden" name="CharaName" value="레이">
+                        <input type="hidden" name="NomalAttack" value="2.0">
+                        <input type="hidden" name="Passiveskill" value="0">
+                        <input type="hidden" name="Activeskill" value="24">
+                        <input type="hidden" name="UltSkill" value="50">
+                        <button type="submit" id="aw23"><img src="./asset/RAY.webp" alt=""></button>
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <form method="post" action="/ChangeEq">
+                        <input type="hidden" name="CharaNum" value="21">
+                        <input type="hidden" name="CharaName" value="에클레시아">
+                        <input type="hidden" name="NomalAttack" value="1.76">
+                        <input type="hidden" name="Passiveskill" value="2">
+                        <input type="hidden" name="Activeskill" value="22">
+                        <input type="hidden" name="UltSkill" value="45">
+                        <button type="submit" id="aw24"><img src="./asset/ECCLESIA.webp" alt=""></button>
+                    </form>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table class="character-table hidden" id="sniper">
+        <tbody>
+            <tr>
+                <td>
+
+                    <form method="post" action="/ChangeEq">
+                        <input type="hidden" name="CharaNum" value="22">
+                        <input type="hidden" name="CharaName" value="리플레이서 퀸">
+                        <input type="hidden" name="NomalAttack" value="1.9">
+                        <input type="hidden" name="Passiveskill" value="4">
+                        <input type="hidden" name="Activeskill" value="28">
+                        <input type="hidden" name="UltSkill" value="56">
+                        <button type="submit" id="aw25"><img src="./asset/REPLACERQUEEN.webp" alt=""></button>
+                    </form>
+                </td>
+                <td>
+                    <form method="post" action="/ChangeEq">
+                        <input type="hidden" name="CharaNum" value="23">
+                        <input type="hidden" name="CharaName" value="에이미 퍼스트윙">
+                        <input type="hidden" name="NomalAttack" value="1.67">
+                        <input type="hidden" name="Passiveskill" value="0">
+                        <input type="hidden" name="Activeskill" value="23">
+                        <input type="hidden" name="UltSkill" value="50">
+                        <button type="submit" id="aw26"><img src="./asset/AMYFIRSTWING.webp" alt=""></button>
+                    </form>
+                </td>
+                <td>
+                    <form method="post" action="/ChangeEq">
+                        <input type="hidden" name="CharaNum" value="24">
+                        <input type="hidden" name="CharaName" value="큐리안">
+                        <input type="hidden" name="NomalAttack" value="1.33">
+                        <input type="hidden" name="Passiveskill" value="0">
+                        <input type="hidden" name="Activeskill" value="25">
+                        <input type="hidden" name="UltSkill" value="62">
+                        <button type="submit" id="aw27"><img src="./asset/CURIAN.webp" alt=""></button>
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <form method="post" action="/ChangeEq">
+                        <input type="hidden" name="CharaNum" value="25">
+                        <input type="hidden" name="CharaName" value="각성 로자리아">
+                        <input type="hidden" name="NomalAttack" value="2">
+                        <input type="hidden" name="Passiveskill" value="5">
+                        <input type="hidden" name="Activeskill" value="28">
+                        <input type="hidden" name="UltSkill" value="62">
+                        <button type="submit" id="aw28"><img src="./asset/ROSARIALEFRIEDE.webp" alt=""></button>
+                    </form>
+                </td>
+                <td>
+                    <form method="post" action="/ChangeEq">
+                        <input type="hidden" name="CharaNum" value="26">
+                        <input type="hidden" name="CharaName" value="모드레드">
+                        <input type="hidden" name="NomalAttack" value="1.67">
+                        <input type="hidden" name="Passiveskill" value="4">
+                        <input type="hidden" name="Activeskill" value="24">
+                        <input type="hidden" name="UltSkill" value="55">
+                        <button type="submit" id="aw29"><img src="./asset/MORDRED.webp" alt=""></button>
+                    </form>
+
+                </td>
+
+            </tr>
+        </tbody>
+    </table>
+
+
+    <table class="character-table hidden" id="supporter">
+        <tbody>
+            <tr>
+                <td>
+                    <form method="post" action="/ChangeEq">
+                        <input type="hidden" name="CharaNum" value="27">
+                        <input type="hidden" name="CharaName" value="이지수">
+                        <input type="hidden" name="NomalAttack" value="1.83">
+                        <input type="hidden" name="Passiveskill" value="0">
+                        <input type="hidden" name="Activeskill" value="24">
+                        <input type="hidden" name="UltSkill" value="46">
+                        <button type="submit" id="aw30"><img src="./asset/LEEJISOO.webp" alt=""></button>
+                    </form>
+                </td>
+                <td>
+                    <form method="post" action="/ChangeEq">
+                        <input type="hidden" name="CharaNum" value="28">
+                        <input type="hidden" name="CharaName" value="각성 신지아">
+                        <input type="hidden" name="NomalAttack" value="2.7">
+                        <input type="hidden" name="Passiveskill" value="0">
+                        <input type="hidden" name="Activeskill" value="32">
+                        <input type="hidden" name="UltSkill" value="68">
+                        <button type="submit" id="aw31"><img src="./asset/SHINJIA.webp" alt=""></button>
+                    </form>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <form method="post" action="/ChangeEq">
+                        <input type="hidden" name="CharaNum" value="29">
+                        <input type="hidden" name="CharaName" value="각성 류드밀라">
+                        <input type="hidden" name="NomalAttack" value="1.82">
+                        <input type="hidden" name="Passiveskill" value="0">
+                        <input type="hidden" name="Activeskill" value="25">
+                        <input type="hidden" name="UltSkill" value="48">
+                        <button type="submit" id="aw32"><img src="./asset/LYUDMILA.webp" alt=""></button>
+                    </form>
+
+                </td>
+                <td>
+                    <form method="post" action="/ChangeEq">
+                        <input type="hidden" name="CharaNum" value="30">
+                        <input type="hidden" name="CharaName" value="각성 크리스">
+                        <input type="hidden" name="NomalAttack" value="2.33">
+                        <input type="hidden" name="Passiveskill" value="0">
+                        <input type="hidden" name="Activeskill" value="24">
+                        <input type="hidden" name="UltSkill" value="43">
+                        <button type="submit" id="aw33"><img src="./asset/CHRISTINABRECHT.webp" alt=""></button>
+                    </form>
+
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>
+
+</body>
+
+</html>

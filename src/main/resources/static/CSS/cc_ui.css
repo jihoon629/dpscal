@@ -1,0 +1,88 @@
+/* 이미지와 스탯 내용을 나란히 배치하기 위한 Flexbox 설정 */
+#character-section {
+    display: flex;
+    align-items: center; /* 이미지와 스탯을 수직으로 가운데 정렬 */
+}
+        
+/*캐릭터 프로필 표현부분*/
+#character-image {
+    margin-right: 20px;
+    position: relative;
+    top: 180px;
+    left: 200px;
+    width: 340x;
+    height: 340px;
+}
+
+#background {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#image{
+    position: relative;
+    top: -10px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/*스텟부분*/
+#stats {
+    position: absolute;
+    top: 180px; /* 스탯 박스의 상단 위치 */
+    left: 850px; /* 스탯 박스의 왼쪽 위치 */
+    font-size: 18px;
+    text-align: left;
+}
+
+/*레벨 표시부분*/
+.LvNum {
+    font-family: '넥슨고딕2_B,serif';
+}
+
+/*장비 선택박스*/
+/* 박스 디자인 */
+.equitment {
+    position: relative;
+    display: flex;
+    top: 200px;
+    left: 175px;
+}
+
+.equitment-box {
+    margin-left: 6px;
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(to bottom, #333 0%, #000 100%); /* 위쪽은 어둡고 아래쪽은 더 어두운 그라데이션 */
+    border-radius: 8px; /* 모서리 둥글게 */
+    display: flex; /* 플렉스 컨테이너로 설정 */
+    justify-content: center; /* 수평 가운데 정렬 */
+    align-items: center; /* 수직 가운데 정렬 */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* 약간의 그림자 효과 */
+    cursor: pointer; /* 마우스를 올렸을 때 포인터로 변경 */
+    position: relative;
+}
+
+/* + 기호 디자인 */
+.equitment-box::after {
+    content: '+';
+    font-size: 48px;
+    color: #555; /* 중간 밝기의 회색 */
+}
+
+.equitment-box select {
+    display: none;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 80px;
+    font-size: 18px;
+}
+
+.equitment-box.show select {
+    display: block;
+}

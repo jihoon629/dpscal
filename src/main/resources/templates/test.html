@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="fonts.css" rel="stylesheet" type="text/css" />
+    <link href="cc_ui.css" rel="stylesheet" type="text/css" />
+    <title th:text="${pageTitle}">카운터사이드 계산기</title>
+</head>
+
+<body>
+    <div id="DPS">
+        <span style="font-family: 넥슨고딕2_M, serif;">DPS 측정</span>
+    </div>
+
+    <div id="character-section">
+        <div id="character-image">
+            <img id="background" th:src="@{/icon/각성배경.png}" alt="배경 이미지">
+            <img id="image" th:src="@{/icon/각등이.png}" alt="캐릭터 이미지">
+        </div>
+        <div id="stats">
+            <p style="text-align: center;">스탯 요약</p>
+            <ul>
+                <li>이름: <span id="신창섭" th:text="${characters.name}"></span></li>
+                <li>체력: <span id="hp" th:text="${characters.HP}"></span></li>
+                <li>공격력: <span id="atk" th:text="${characters.ATK}"></span></li>
+                <li>방어력: <span id="def" th:text="${characters.DEF}"></span></li>
+                <li>치명: <span id="crt" th:text="${characters.CRIT}"></span></li>
+                <li>명중: <span id="hit" th:text="${characters.HIT}"></span></li>
+                <li>회피: <span id="miss" th:text="${characters.EVA}"></span></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="equitment">
+        <div class="equitment-box">
+            <select th:each="option : ${options}">
+                <option th:value="${option.value}" th:text="${option.text}"></option>
+            </select>
+        </div>
+        <!-- Repeat for other equitment-box divs if needed -->
+    </div>
+
+    <div id="settings">
+        <button id="settings-button" th:text="${buttonText}">계산</button>
+    </div>
+</body>
+
+<script>
+    // JavaScript code to handle dynamic data loading if needed
+    // You might still need some JavaScript for handling interactions or dynamic updates
+</script>
+
+</html>

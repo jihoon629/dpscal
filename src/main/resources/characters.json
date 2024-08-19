@@ -1,0 +1,326 @@
+[
+    {
+        "name": "Amy Firstwing",
+        "HP": 44001,
+        "ATK": 6014,
+        "DEF": 672,
+        "CRIT": 0,
+        "HIT": 906,
+        "EVA": 654
+    },
+    {
+        "name": "Avenger Mordred",
+        "HP": 42404,
+        "ATK": 8242,
+        "DEF": 440,
+        "CRIT": 1053,
+        "HIT": 1923,
+        "EVA": 359
+    },
+    {
+        "name": "Awakened Hilde",
+        "HP": 70595,
+        "ATK": 4468,
+        "DEF": 3082,
+        "CRIT": 261,
+        "HIT": 1233,
+        "EVA": 549
+    },
+    {
+        "name": "Awakened Horizon",
+        "HP": 39120,
+        "ATK": 6071,
+        "DEF": 783,
+        "CRIT": 405,
+        "HIT": 762,
+        "EVA": 608
+    },
+    {
+        "name": "Awakened Jake",
+        "HP": 90941,
+        "ATK": 4788,
+        "DEF": 1749,
+        "CRIT": 285,
+        "HIT": 551,
+        "EVA": 600
+    },
+    {
+        "name": "Awakened Joo Shiyoon",
+        "HP": 67159,
+        "ATK": 6752,
+        "DEF": 989,
+        "CRIT": 1234,
+        "HIT": 544,
+        "EVA": 1086
+    },
+    {
+        "name": "Awakened Karin Wong",
+        "HP": 37906,
+        "ATK": 6917,
+        "DEF": 775,
+        "CRIT": 1312,
+        "HIT": 1257,
+        "EVA": 361
+    },
+    {
+        "name": "Awakened Lee Sooyeon",
+        "HP": 32670,
+        "ATK": 6336,
+        "DEF": 418,
+        "CRIT": 754,
+        "HIT": 823,
+        "EVA": 996
+    },
+    {
+        "name": "Awakened Lyudmila",
+        "HP": 37817,
+        "ATK": 4835,
+        "DEF": 528,
+        "CRIT": 638,
+        "HIT": 992,
+        "EVA": 666
+    },
+    {
+        "name": "Awakened Maria",
+        "HP": 42123,
+        "ATK": 6063,
+        "DEF": 807,
+        "CRIT": 1165,
+        "HIT": 871,
+        "EVA": 566
+    },
+    {
+        "name": "Awakened Na Yubin",
+        "HP": 81396,
+        "ATK": 5719,
+        "DEF": 1420,
+        "CRIT": 434,
+        "HIT": 469,
+        "EVA": 1560
+    },
+    {
+        "name": "Awakened Ray",
+        "HP": 64603,
+        "ATK": 5432,
+        "DEF": 1791,
+        "CRIT": 261,
+        "HIT": 613,
+        "EVA": 687
+    },
+    {
+        "name": "Awakened Regina",
+        "HP": 55331,
+        "ATK": 6055,
+        "DEF": 561,
+        "CRIT": 863,
+        "HIT": 863,
+        "EVA": 863
+    },
+    {
+        "name": "Awakened Rosaria",
+        "HP": 28594,
+        "ATK": 6006,
+        "DEF": 447,
+        "CRIT": 666,
+        "HIT": 2294,
+        "EVA": 335
+    },
+    {
+        "name": "Awakened Seo Yoon",
+        "HP": 47686,
+        "ATK": 7217,
+        "DEF": 695,
+        "CRIT": 1108,
+        "HIT": 920,
+        "EVA": 590
+    },
+    {
+        "name": "Awakened Shin Jia",
+        "HP": 48451,
+        "ATK": 3234,
+        "DEF": 495,
+        "CRIT": 608,
+        "HIT": 585,
+        "EVA": 635
+    },
+    {
+        "name": "Awakened Sigma",
+        "HP": 83982,
+        "ATK": 5947,
+        "DEF": 1420,
+        "CRIT": 377,
+        "HIT": 924,
+        "EVA": 864
+    },
+    {
+        "name": "Awakened Yoo Mina",
+        "HP": 70319,
+        "ATK": 8169,
+        "DEF": 810,
+        "CRIT": 486,
+        "HIT": 860,
+        "EVA": 1728
+    },
+    {
+        "name": "Awakened Yuna Springfield",
+        "HP": 66735,
+        "ATK": 5961,
+        "DEF": 849,
+        "CRIT": 776,
+        "HIT": 578,
+        "EVA": 1269
+    },
+    {
+        "name": "Curian",
+        "HP": 54798,
+        "ATK": 8762,
+        "DEF": 1163,
+        "CRIT": 722,
+        "HIT": 2094,
+        "EVA": 0
+    },
+    {
+        "name": "Eve Meitner",
+        "HP": 59650,
+        "ATK": 6998,
+        "DEF": 908,
+        "CRIT": 1011,
+        "HIT": 955,
+        "EVA": 854
+    },
+    {
+        "name": "Evolved One",
+        "HP": 105826,
+        "ATK": 4992,
+        "DEF": 2555,
+        "CRIT": 192,
+        "HIT": 882,
+        "EVA": 0
+    },
+    {
+        "name": "Great Silence Ecclesia",
+        "HP": 70350,
+        "ATK": 5542,
+        "DEF": 1615,
+        "CRIT": 0,
+        "HIT": 930,
+        "EVA": 1102
+    },
+    {
+        "name": "Griffin Rider Chris",
+        "HP": 54425,
+        "ATK": 6359,
+        "DEF": 434,
+        "CRIT": 613,
+        "HIT": 476,
+        "EVA": 1297
+    },
+    {
+        "name": "Jack-O",
+        "HP": 62566,
+        "ATK": 6063,
+        "DEF": 785,
+        "CRIT": 396,
+        "HIT": 1137,
+        "EVA": 898
+    },
+    {
+        "name": "Kallen Kōzuki",
+        "HP": 62063,
+        "ATK": 4523,
+        "DEF": 1054,
+        "CRIT": 443,
+        "HIT": 1135,
+        "EVA": 1044
+    },
+    {
+        "name": "Kostroma Mavka",
+        "HP": 41906,
+        "ATK": 6921,
+        "DEF": 537,
+        "CRIT": 1151,
+        "HIT": 546,
+        "EVA": 276
+    },
+    {
+        "name": "Kubera Alice Braidwood",
+        "HP": 28596,
+        "ATK": 5933,
+        "DEF": 142,
+        "CRIT": 1312,
+        "HIT": 739,
+        "EVA": 180
+    },
+    {
+        "name": "Lee Jisoo",
+        "HP": 55755,
+        "ATK": 4233,
+        "DEF": 1049,
+        "CRIT": 872,
+        "HIT": 438,
+        "EVA": 1095
+    },
+    {
+        "name": "Maestra Nequitia",
+        "HP": 99938,
+        "ATK": 0,
+        "DEF": 1295,
+        "CRIT": 0,
+        "HIT": 0,
+        "EVA": 0
+    },
+    {
+        "name": "Ministra",
+        "HP": 45390,
+        "ATK": 6692,
+        "DEF": 878,
+        "CRIT": 1032,
+        "HIT": 630,
+        "EVA": 360
+    },
+    {
+        "name": "Orochinagi Chifuyu",
+        "HP": 60392,
+        "ATK": 6534,
+        "DEF": 1270,
+        "CRIT": 962,
+        "HIT": 847,
+        "EVA": 506
+    },
+    {
+        "name": "Replacer King",
+        "HP": 69063,
+        "ATK": 4270,
+        "DEF": 1851,
+        "CRIT": 453,
+        "HIT": 987,
+        "EVA": 228
+    },
+    {
+        "name": "Replacer Queen",
+        "HP": 36065,
+        "ATK": 7262,
+        "DEF": 599,
+        "CRIT": 933,
+        "HIT": 2243,
+        "EVA": 504
+    },
+    {
+        "name": "Shepherd and Lurcher",
+        "HP": 141823,
+        "ATK": 8271,
+        "DEF": 2154,
+        "CRIT": 0,
+        "HIT": 1190,
+        "EVA": 392
+    },
+    {
+        "name": "Six Wings Swan Claire",
+        "HP": 41294,
+        "ATK": 5298,
+        "DEF": 581,
+        "CRIT": 462,
+        "HIT": 1058,
+        "EVA": 739
+    }
+]
